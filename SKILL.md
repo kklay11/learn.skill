@@ -1,6 +1,6 @@
 ---
 name: project-learning-notes
-description: Agent-agnostic workflow for turning a code project into an evolving study system: inspect source files, generate or refresh learning notes and a progress document, and persist chapter-specific user questions with their answers. Use when a user wants to learn from an existing repository, asks to create study notes or a learning plan from project code, or asks a question about a named chapter, module, or lesson that should be added to the project's learning documentation.
+description: "Agent-agnostic workflow for turning a code project into an evolving study system: inspect source files, generate or refresh learning notes and a progress document, and persist chapter-specific user questions with their answers. Use when a user wants to learn from an existing repository, asks to create study notes or a learning plan from project code, or asks a question about a named chapter, module, or lesson that should be added to the project's learning documentation."
 ---
 
 # Project Learning Notes
