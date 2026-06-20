@@ -1,6 +1,6 @@
 ---
 name: project-learning-notes
-description: Turn a code project into an evolving study system: inspect source files, generate or refresh learning notes and a progress document, and persist chapter-specific user questions with their answers. Use when a user wants to learn from an existing repository, asks to create study notes or a learning plan from project code, or asks a question about a named chapter, module, or lesson that should be added to the project's learning documentation.
+description: Agent-agnostic workflow for turning a code project into an evolving study system: inspect source files, generate or refresh learning notes and a progress document, and persist chapter-specific user questions with their answers. Use when a user wants to learn from an existing repository, asks to create study notes or a learning plan from project code, or asks a question about a named chapter, module, or lesson that should be added to the project's learning documentation.
 ---
 
 # Project Learning Notes
@@ -22,9 +22,11 @@ Maintain three artifacts:
 | --- | --- |
 | Study notes | Chapter map, concepts, code references, concise explanations, and Q&A |
 | Progress document | Ordered checklist, current chapter, mastery notes, next action, and dated changelog |
-| `AGENTS.md` | Persistent project rule that chapter questions must be answered and then recorded |
+| Project memory rule | Persistent instruction that chapter questions must be answered and then recorded |
 
 For each chapter, include the source file paths, what the code demonstrates, key concepts, a small representative snippet only when useful, and pitfalls visible in the project. Keep notes in the user's language when clear from the repository or conversation.
+
+Write the memory rule to the target agent's project-level instruction or memory file when it supports one. Otherwise create `docs/learning-memory.md` as a portable fallback. State that chapter questions must be answered first and then written to the corresponding Q&A section without asking for additional permission.
 
 ## 3. Handle a chapter question
 
